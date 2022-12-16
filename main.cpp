@@ -138,15 +138,14 @@ void firstScreen() {
     glVertex2f(may1 + 0.6, 0.75);
     glEnd();
   
-    char diem[50];
-    sprintf(diem, "Nhan SPACE de Bat dau");
+    char huongdan[50];
+    sprintf(huongdan, "Nhan SPACE de Bat dau");
     glColor3f(0, 0, 0);
-    showString(may1 + 0.63, 0.69, (void *)GLUT_BITMAP_8_BY_13, diem);
+    showString(may1 + 0.63, 0.69, (void *)GLUT_BITMAP_8_BY_13, huongdan);
     
 	may1 -= 0.001f;
     if (may1 < -2) {
         may1 = 0.5;
-        score++;
     }
     
     // may 2
@@ -161,7 +160,6 @@ void firstScreen() {
     may2 -= 0.001f;
     if (may2 < -1) {
         may2 = 1.3;
-        score++;
     }
     
     // may 3
@@ -176,7 +174,6 @@ void firstScreen() {
     may3 -= 0.001f;
     if (may3 < -0.5) {
         may3 = 2;
-        score++;
     }
 
 }
